@@ -1,4 +1,5 @@
 require "core/ui/assets/version"
+require "core/ui/assets/engine"
 
 module Core
   module Ui
