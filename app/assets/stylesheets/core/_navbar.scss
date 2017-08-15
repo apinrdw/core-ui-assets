@@ -2,8 +2,8 @@
   position: relative;
   flex-direction: row;
   height: $navbar-height;
-  margin: 0;
   padding: 0;
+  margin: 0;
   background-color: $navbar-bg;
   @include borders($navbar-border);
 
@@ -21,6 +21,10 @@
     @include borders($navbar-brand-border);
   }
 
+  .navbar-toggler {
+    color: $navbar-color;
+  }
+
   .navbar-nav {
     flex-direction: row;
     align-items: center;
@@ -32,9 +36,15 @@
     margin: 0 !important;
     text-align: center;
 
+    button {
+      margin: 0 auto;
+    }
+
     .nav-link {
       padding-top: 0;
       padding-bottom: 0;
+      background: 0;
+      border: 0;
 
       .badge {
         position: absolute;
